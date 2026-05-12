@@ -52,10 +52,26 @@
 
 //Snack 5
 
-function stampaOgniSecondo(messaggio) {
-  setInterval(() => {
-    console.log(messaggio);
-  }, 1000);
+// function stampaOgniSecondo(messaggio) {
+//   setInterval(() => {
+//     console.log(messaggio);
+//   }, 1000);
+// }
+
+// stampaOgniSecondo('Ciao a tutti');
+
+//Snack 6
+
+function creaContatoreAutomatico(tempo) {
+  return function () {
+    let contatore = 0;
+    setInterval(() => {
+      contatore++;
+      console.log('Incremento', contatore);
+    }, tempo);
+  };
 }
 
-stampaOgniSecondo('Ciao a tutti');
+const timerIncremento = creaContatoreAutomatico(1000);
+
+timerIncremento();
