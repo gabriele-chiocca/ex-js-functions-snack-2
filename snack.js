@@ -22,7 +22,7 @@
 
 //Snack 2
 
-// const quadrato = (num) => console.log(num * 2);
+// const quadrato = (num) => console.log(num ** 2);
 
 // quadrato(2);
 
