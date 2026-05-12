@@ -22,30 +22,40 @@
 
 //Snack 2
 
-const quadrato = (num) => console.log(num * 2);
+// const quadrato = (num) => console.log(num * 2);
 
-quadrato(2);
+// quadrato(2);
 
 //Snack 3
 
-const somma = (a, b) => a + b;
+// const somma = (a, b) => a + b;
 
-const moltiplicazione = (a, b) => a * b;
-const eseguiOperazione = (a, b, operazione) => operazione(a, b);
+// const moltiplicazione = (a, b) => a * b;
+// const eseguiOperazione = (a, b, operazione) => operazione(a, b);
 
-console.log(eseguiOperazione(2, 4, somma));
-console.log(eseguiOperazione(2, 4, moltiplicazione));
+// console.log(eseguiOperazione(2, 4, somma));
+// console.log(eseguiOperazione(2, 4, moltiplicazione));
 
 // Snack 4
 
-function creaTimer(tempo) {
-  return function () {
-    setTimeout(() => {
-      console.log('Tempo scaduto!');
-    }, tempo);
-  };
+// function creaTimer(tempo) {
+//   return function () {
+//     setTimeout(() => {
+//       console.log('Tempo scaduto!');
+//     }, tempo);
+//   };
+// }
+
+// const timer = creaTimer(1000);
+
+// timer();
+
+//Snack 5
+
+function stampaOgniSecondo(messaggio) {
+  setInterval(() => {
+    console.log(messaggio);
+  }, 1000);
 }
 
-const timer = creaTimer(1000);
-
-timer();
+stampaOgniSecondo('Ciao a tutti');
