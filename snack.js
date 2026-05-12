@@ -62,16 +62,28 @@
 
 //Snack 6
 
-function creaContatoreAutomatico(tempo) {
-  return function () {
-    let contatore = 0;
-    setInterval(() => {
-      contatore++;
-      console.log('Incremento', contatore);
-    }, tempo);
-  };
+// function creaContatoreAutomatico(tempo) {
+//   return function () {
+//     let contatore = 0;
+//     setInterval(() => {
+//       contatore++;
+//       console.log('Incremento', contatore);
+//     }, tempo);
+//   };
+// }
+
+// const timerIncremento = creaContatoreAutomatico(1000);
+
+// timerIncremento();
+
+// Snack 7
+
+function eseguiEFerma(messaggio, avvio, stop) {
+  const id = setInterval(() => {
+    console.log(messaggio);
+  }, avvio);
+
+  setTimeout(() => {
+    clearInterval(id);
+  }, stop);
 }
-
-const timerIncremento = creaContatoreAutomatico(1000);
-
-timerIncremento();
