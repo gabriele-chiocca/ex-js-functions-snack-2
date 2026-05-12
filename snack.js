@@ -35,3 +35,17 @@ const eseguiOperazione = (a, b, operazione) => operazione(a, b);
 
 console.log(eseguiOperazione(2, 4, somma));
 console.log(eseguiOperazione(2, 4, moltiplicazione));
+
+// Snack 4
+
+function creaTimer(tempo) {
+  return function () {
+    setTimeout(() => {
+      console.log('Tempo scaduto!');
+    }, tempo);
+  };
+}
+
+const timer = creaTimer(1000);
+
+timer();
