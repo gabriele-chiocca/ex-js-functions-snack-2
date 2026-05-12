@@ -25,3 +25,13 @@
 const quadrato = (num) => console.log(num * 2);
 
 quadrato(2);
+
+//Snack 3
+
+const somma = (a, b) => a + b;
+
+const moltiplicazione = (a, b) => a * b;
+const eseguiOperazione = (a, b, operazione) => operazione(a, b);
+
+console.log(eseguiOperazione(2, 4, somma));
+console.log(eseguiOperazione(2, 4, moltiplicazione));
