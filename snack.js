@@ -88,4 +88,18 @@ function eseguiEFerma(messaggio, avvio, stop) {
   }, stop);
 }
 
-eseguiEFerma('Eccomi qui', 1000, 6000);
+// Snack 8 Bonus
+
+function contoAllaRovescia(numero) {
+  const id = setInterval(() => {
+    if (numero === 0) {
+      console.log('Tempo scaduto!');
+      clearInterval(id);
+    } else {
+      numero--;
+      console.log(numero);
+    }
+  }, 1000);
+}
+
+contoAllaRovescia(10);
