@@ -87,3 +87,5 @@ function eseguiEFerma(messaggio, avvio, stop) {
     clearInterval(id);
   }, stop);
 }
+
+eseguiEFerma('Eccomi qui', 1000, 6000);
